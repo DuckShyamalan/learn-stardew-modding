@@ -1,10 +1,10 @@
 { 
-    "Name": "LearnStardewModding", 
+    "Name": "LearnStardewModdingLibrary", 
     "Author": "Duck Shyamalan", 
     "Version": "1.0.0",
     "Description": "test framework", 
-    "UniqueID": "DuckShyamalan.LearnStardewModding", 
-    "EntryDll": ".dll", 
+    "UniqueID": "DuckShyamalan.LearnStardewModdingLibrary", 
+    "EntryDll": "LearnStardewModdingLibrary.dll", 
     "MinimumApiVersion": "2.10.0", 
     "UpdateKeys": [] 
 }
