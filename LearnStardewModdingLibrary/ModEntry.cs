@@ -5,14 +5,15 @@ using StardewModdingAPI.Events;
 using StardewModdingAPI.Utilities; 
 using StardewValley; 
 
-namespace LearnStardewModdingLibrary { /// The mod entry point.
+namespace LearnStardewModdingLibrary { 
+    /// <summary> The mod entry point.</summary>
     public class ModEntry : Mod { 
         /********* 
         ** Public methods 
         *********/
         /// <summary> The mod entry point, called after the mod is first loaded.</summary>
         /// Provides simplified APIs for writing mods.
-        public override void Entry(IModHelper helper) { 
+        public override void Entry(IModHelper helper) {
             helper.Events.Input.ButtonPressed += this.OnButtonPressed; 
         }
 
@@ -27,7 +28,8 @@ namespace LearnStardewModdingLibrary { /// The mod entry point.
             if (!Context.IsWorldReady) return;
 
             // print button presses to the console window
-            this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.");
+            this.Monitor.Log($"{Game1.player.Name} pressed {e.Button}.", LogLevel.Debug);
+            Console.WriteLine($"{Game1.player.Name} pressed {e.Button}.");
         }
     }
 }
